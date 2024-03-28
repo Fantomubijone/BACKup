@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sign Up Page</title>
+		<link
+			rel="shortcut icon"
+			href="https://storage.googleapis.com/platform-webstore-rel-assets/pgo/site_assets/favicon.ico"
+		/>
+		<link rel="stylesheet" href="../css/styleslog.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="logo">
+				<a href="index.html">
+				<img src="../assets/LOGO/T21_Login.png" alt="Pokemon Go Logo" />
+				</a>
+			</div>
+			<div class="login-container">
+				<h3>Create your Pokemon Go Account</h3>
+				<form id="signup-form">
+					<label for="playerId">PlayerID</label>
+					<input
+						type="text"
+						id="playerId"
+						name="playerId"
+						placeholder="PlayerID (#### #### ####)"
+						pattern="[0-9]{4} [0-9]{4} [0-9]{4}"
+						required
+					/>
+					<input
+						type="text"
+						id="ign"
+						name="ign"
+						placeholder="In-game Name (IGN)"
+						required
+					/>
+					<input
+						type="email"
+						id="email"
+						name="email"
+						placeholder="E-mail address"
+						required
+					/>
+					<input
+						type="password"
+						id="password"
+						name="password"
+						placeholder="Password"
+						required
+					/>
+					<input
+						type="password"
+						id="confirmPassword"
+						name="confirmPassword"
+						placeholder="Confirm Password"
+						required
+					/>
+					<button type="submit" class="login-btn niantic">Sign Up</button>
+				</form>
+				<p>Or sign up with:</p>
+				<button class="login-btn apple">Sign up with Apple</button>
+				<button class="login-btn facebook">Sign up with Facebook</button>
+				<button class="login-btn google">Sign up with Google</button>
+				<p>Already have an account? <a href="login.html">Sign in here</a></p>
+			</div>
+		</div>
+		<script src="../javascript/script.js"></script>
+	</body>
+</html>
